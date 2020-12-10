@@ -14,7 +14,10 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
     .catch((err) => console.log(err));
 
 app.use('/', require('./routes/authenticate'))
+app.use("", (req, res) => {
+    res.render("home");
 
+})
 app.use('/', require('./routes/cart'))
 
 app.listen(5000, () => console.log("Server Running..."));

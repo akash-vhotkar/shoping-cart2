@@ -19,5 +19,5 @@ app.use("", (req, res) => {
 
 })
 app.use('/', require('./routes/cart'))
-
-app.listen(5000, () => console.log("Server Running..."));
+const port = process.env.PORT || 5000;
+app.listen(port, () => console.log("Server Running..."));

@@ -63,7 +63,7 @@ function add(e, username) {
             $.ajax({
                 type: "POST",
                 data: JSON.stringify(product),
-                url: 'https://sports-fever6.herokuapp.com/add',
+                url: 'http://localhost:5000/add',
                 success: function (msg) {
                     if (msg) {
                         console.log("AD")

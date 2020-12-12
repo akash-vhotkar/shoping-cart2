@@ -13,7 +13,7 @@ function rimu(e,username){
     $.ajax({
         type:"POST",
         data:JSON.stringify(check),
-        url:'http://localhost:5000/remove',
+        url:'https://sports-fever6.herokuapp.com/remove',
         success:function(msg){
             if(!msg){
                 console.log("ERROR")
@@ -84,7 +84,7 @@ function updatequantity1(e,username,product_id){
     $.ajax({
         type:"POST",
         data:JSON.stringify(datas),
-        url:'http://localhost:5000/updatequantity',
+        url:'https://sports-fever6.herokuapp.com/updatequantity',
         success:function(msg){
             if(msg){
                 console.log(msg);
@@ -114,7 +114,7 @@ function updatequantity2(e,username,product_id){
     $.ajax({
         type:"POST",
         data:JSON.stringify(datas),
-        url:'http://localhost:5000/updatequantity',
+        url:'https://sports-fever6.herokuapp.com/updatequantity',
         success:function(msg){
             if(msg){
                 console.log(msg);

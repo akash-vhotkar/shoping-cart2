@@ -15,7 +15,7 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
 
 app.use('/', require('./routes/authenticate'))
 app.use("", (req, res) => {
-    res.render("login");
+    res.render("home");
 
 })
 app.use('/', require('./routes/cart'))
